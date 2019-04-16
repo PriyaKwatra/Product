@@ -2,8 +2,12 @@ node{
 
    stages{
         stage('Build'){
+
                steps{
-                   sh 'mvn clean install'
+                   withMaven(maven: 'M3', jdk: 'JDK8')
+                   {
+                       sh "mvn clean install"
+                   }
                }
         }
    }
