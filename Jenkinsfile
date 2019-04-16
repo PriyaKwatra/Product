@@ -1,6 +1,4 @@
 node{
-
-
         stage('Build'){
 
 
@@ -10,5 +8,4 @@ node{
                    }
 
         }
-
 }
