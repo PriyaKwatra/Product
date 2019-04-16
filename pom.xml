@@ -6,7 +6,24 @@
 
     <groupId>com.nagarro</groupId>
     <artifactId>ProductService</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>main</module>
+        <module>api</module>
+        <module>aggregates</module>
+    </modules>
+    <properties>
+        <dropwizard.version></dropwizard.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.dropwizard</groupId>
+            <artifactId>dropwizard-core</artifactId>
+            <version>1.3.7</version>
+        </dependency>
+    </dependencies>
 
 
 </project>
