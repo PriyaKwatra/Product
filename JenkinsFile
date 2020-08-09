@@ -3,8 +3,8 @@ node('master') {
            checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '4f5235f1-96f6-4940-8fc2-eb10069b6d82', url: 'https://github.com/PriyaKwatra/Product']]])
         }
         stage('Build and Test') {
-            withMaven() {
+             
             sh("mvn clean install")
-        }
+        
      }   
 }
